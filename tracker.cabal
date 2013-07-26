@@ -1,0 +1,20 @@
+name:                tracker
+version:             0.1.0.0
+synopsis:            Track values on web pages by CSS selector
+homepage:            https://github.com/pbrisbin/tracker
+license:             MIT
+author:              Pat Brisbin, Josh Steiner
+maintainer:          pbrisbin@gmail.com,josh@jsteiner.me
+category:            Network
+build-type:          Simple
+cabal-version:       >=1.8
+
+library
+  exposed-modules: Tracker.Value
+
+  build-depends: base ==4.6.*, HandsomeSoup ==0.3.*, hxt ==9.3.*
+
+executable tracker
+  main-is: main.hs
+
+  build-depends: base ==4.6.*, HandsomeSoup ==0.3.*, hxt ==9.3.*
